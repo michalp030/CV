@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: black;   
+    margin: 0 auto;
+    padding: 0 auto;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+}
+#cv{
+    white-space: pre;
+    font-size: 30px;
+}
+header{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rainbowText 5s linear infinite;
+}
+@keyframes rainbowText {
+    0% { color: red; }
+    14% { color: orange; }
+    28% { color: yellow; }
+    42% { color: green; }
+    57% { color: blue; }
+    71% { color: indigo; }
+    85% { color: violet; }
+    100% { color: red; }
+}
+
+.main{
+    font-size: large;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+    
+    .head { 
+        width: 20%;
+        margin-left: 5%;
+        margin-right: 3%;
+        animation: appiear 4s;
+    }
+    .h4 {
+        font-size: 100px;
+    }
+
+.left {
+    width: 20%;
+    text-align: right;
+    overflow: hidden;
+    margin-right: 2%;
+    
+}
+    .left-item{
+        margin-bottom: 5px;
+        position: relative;
+        animation: moveLeftToRight 5s;
+
+    }
+    @keyframes moveLeftToRight {
+        0% {
+            
+            left: -100%;
+        }
+        75%{
+            left: -100%;
+        }
+        100% {
+            left: 0%;
+        }
+    }
+
+.right {
+    text-align: left;
+    overflow: hidden;
+    width: 45%;
+    margin-right: 5%;
+}
+    .right-item {
+        margin-bottom: 5px;
+        position: relative;
+        animation: moveRightToLeft 5s;
+    }
+    @keyframes moveRightToLeft {
+        0% {
+            
+            right: -100%;
+        }
+        75%{
+            right: -100%;
+        }
+        100% {
+            right: 0%;
+        }
+
+    }
+
+.background {
+    background-color: grey;
+    position: absolute;
+    height: 96%;
+    width: 95%;
+    z-index: -1;
+    margin-bottom: 2%;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 5px;
+    animation: appiear 4s;
+}
+@keyframes appiear {
+    0% {
+        
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }    
+    100% {
+        opacity: 1;
+    }
+}
+
+.personalData {
+    position: relative;
+    width: 50%;
+    color: white;
+    display: flex;
+    padding-top: 0.25%;
+
+}
+    .left-item-personalData {
+        position: relative;
+        height: 3em;
+        animation: moveLeftToRight 5s;
+    }
+    .right-item-personalData {
+        position: relative;
+        height: 3em;
+        animation: moveRightToLeft 5s;
+    }
+
+
+.education-qualifications{
+    position: relative;
+    width: 50%;
+    display: flex;
+    padding-top: 0.25%;
+}
+    .left-item-education-qualifications {
+
+        position: relative;
+        height: 8em;
+        animation: moveLeftToRight 5s;
+        flex: 0 1 auto;
+    }
+    .right-item-education-qualifications {
+
+        position: relative;
+        height: 8em;
+        animation: moveRightToLeft 5s;
+        flex: 0 1 auto;
+    }
+
+.work-experence {
+    position: relative;
+    color: white;
+    display: flex;
+    width: 50%;
+    margin-top: 1%;
+    padding-top: 0.25%;
+}
+    .left-item-work-experence {
+
+        position: relative;
+        height: 8em;
+        animation: moveLeftToRight 5s;
+    }
+    .right-item-work-experence {
+
+        position: relative;
+        height: 8em;
+        animation: moveRightToLeft 5s;
+        overflow-wrap: break-word;
+}
+
+.courses {
+    position: relative;
+    color: white;
+    display: flex;
+    width: 50%;
+    margin-top: 1%;
+    padding-top: 0.25%;
+}
+
+    .left-item-courses {
+
+        position: relative;
+        height: 8em;
+        animation: moveLeftToRight 5s;
+    }
+    .right-item-courses {
+
+        position: relative;
+        height: 8em;
+        animation: moveRightToLeft 5s;
+    }
+
+.languages {
+    position: relative;
+    color: white;
+    display: flex;
+    width: 50%;
+    margin-top: 1%;
+    padding-top: 0.25%;
+}
+    .left-item-languages {
+
+        position: relative;
+        height: 2em;
+        animation: moveLeftToRight 5s;
+    }
+    .right-item-languages {
+
+        position: relative;
+        height: 2em;
+        animation: moveRightToLeft 5s;
+    }
+.skills {
+    position: relative;
+    color: white;
+    display: flex;
+    width: 50%;
+    margin-top: 1%;
+    padding-top: 0.25%;
+}
+    .right-item-skills {
+
+        position: relative;
+        height: 2em;
+        animation: moveRightToLeft 5s;
+    }
